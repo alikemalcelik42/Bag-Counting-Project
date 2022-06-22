@@ -2,6 +2,7 @@
 using Emgu.CV.Structure;
 using Emgu.CV.Util;
 using Microsoft.VisualBasic;
+using System.Diagnostics;
 using System.Net.NetworkInformation;
 
 namespace Bag_Counting_Project
@@ -214,8 +215,6 @@ namespace Bag_Counting_Project
             }
 
             pictureBox.Image = Frame.ToBitmap();
-
-            Thread.Sleep(50);
         }
 
         private void GetRectangles()
@@ -423,7 +422,17 @@ namespace Bag_Counting_Project
             AimCount = Convert.ToInt32(aimCountNum.Value);
             aimCountBtn.Enabled = false;
         }
-
+        
+        private void contactLinkLbl_Click(object sender, EventArgs e)
+        {
+            var uri = "https://www.mekont.com";
+            var psi = new ProcessStartInfo();
+            psi.UseShellExecute = true;
+            psi.FileName = uri;
+            Process.Start(psi);
+            contactLinkLbl.LinkVisited = true;
+        }
+        
         private void fullVersionLbl_Click(object sender, EventArgs e)
         {
             if (Licenced)
@@ -437,11 +446,6 @@ namespace Bag_Counting_Project
         {
             if (Licenced)
                 File.WriteAllText("count.txt", TotalCount.ToString());
-        }
-
-        private void UserForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
