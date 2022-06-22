@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LicenceForm));
             this.idLabel = new System.Windows.Forms.Label();
             this.idValueLbl = new System.Windows.Forms.Label();
             this.keyLbl = new System.Windows.Forms.Label();
@@ -38,9 +39,9 @@
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(12, 9);
+            this.idLabel.Location = new System.Drawing.Point(14, 9);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(100, 20);
+            this.idLabel.Size = new System.Drawing.Size(106, 21);
             this.idLabel.TabIndex = 0;
             this.idLabel.Text = "ID Numaranız";
             // 
@@ -48,7 +49,7 @@
             // 
             this.idValueLbl.AutoSize = true;
             this.idValueLbl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.idValueLbl.Location = new System.Drawing.Point(12, 29);
+            this.idValueLbl.Location = new System.Drawing.Point(14, 30);
             this.idValueLbl.Name = "idValueLbl";
             this.idValueLbl.Size = new System.Drawing.Size(15, 20);
             this.idValueLbl.TabIndex = 1;
@@ -57,24 +58,24 @@
             // keyLbl
             // 
             this.keyLbl.AutoSize = true;
-            this.keyLbl.Location = new System.Drawing.Point(12, 72);
+            this.keyLbl.Location = new System.Drawing.Point(14, 76);
             this.keyLbl.Name = "keyLbl";
-            this.keyLbl.Size = new System.Drawing.Size(111, 20);
+            this.keyLbl.Size = new System.Drawing.Size(118, 21);
             this.keyLbl.TabIndex = 0;
             this.keyLbl.Text = "Anahtarı Giriniz";
             // 
             // keyTxt
             // 
-            this.keyTxt.Location = new System.Drawing.Point(12, 95);
+            this.keyTxt.Location = new System.Drawing.Point(14, 100);
             this.keyTxt.Name = "keyTxt";
-            this.keyTxt.Size = new System.Drawing.Size(266, 27);
+            this.keyTxt.Size = new System.Drawing.Size(299, 29);
             this.keyTxt.TabIndex = 2;
             // 
             // saveKeyBtn
             // 
-            this.saveKeyBtn.Location = new System.Drawing.Point(12, 128);
+            this.saveKeyBtn.Location = new System.Drawing.Point(14, 134);
             this.saveKeyBtn.Name = "saveKeyBtn";
-            this.saveKeyBtn.Size = new System.Drawing.Size(266, 29);
+            this.saveKeyBtn.Size = new System.Drawing.Size(299, 30);
             this.saveKeyBtn.TabIndex = 3;
             this.saveKeyBtn.Text = "Kaydet";
             this.saveKeyBtn.UseVisualStyleBackColor = true;
@@ -82,14 +83,15 @@
             // 
             // LicenceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(290, 166);
+            this.ClientSize = new System.Drawing.Size(326, 174);
             this.Controls.Add(this.saveKeyBtn);
             this.Controls.Add(this.keyTxt);
             this.Controls.Add(this.idValueLbl);
             this.Controls.Add(this.keyLbl);
             this.Controls.Add(this.idLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LicenceForm";
             this.Text = "NSP 2 - Lisans";
             this.ResumeLayout(false);

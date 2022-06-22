@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.thresholdValueLbl = new System.Windows.Forms.Label();
             this.minAreaLbl = new System.Windows.Forms.Label();
@@ -61,9 +62,9 @@
             // pictureBox
             // 
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox.Location = new System.Drawing.Point(14, 13);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(417, 426);
+            this.pictureBox.Size = new System.Drawing.Size(469, 447);
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             this.pictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox_Paint);
@@ -74,39 +75,39 @@
             // thresholdValueLbl
             // 
             this.thresholdValueLbl.AutoSize = true;
-            this.thresholdValueLbl.Location = new System.Drawing.Point(1295, 79);
+            this.thresholdValueLbl.Location = new System.Drawing.Point(1457, 83);
             this.thresholdValueLbl.Name = "thresholdValueLbl";
-            this.thresholdValueLbl.Size = new System.Drawing.Size(79, 20);
+            this.thresholdValueLbl.Size = new System.Drawing.Size(83, 21);
             this.thresholdValueLbl.TabIndex = 0;
             this.thresholdValueLbl.Text = "Eşik Değer";
             // 
             // minAreaLbl
             // 
             this.minAreaLbl.AutoSize = true;
-            this.minAreaLbl.Location = new System.Drawing.Point(1295, 185);
+            this.minAreaLbl.Location = new System.Drawing.Point(1457, 194);
             this.minAreaLbl.Name = "minAreaLbl";
-            this.minAreaLbl.Size = new System.Drawing.Size(106, 20);
+            this.minAreaLbl.Size = new System.Drawing.Size(113, 21);
             this.minAreaLbl.TabIndex = 0;
             this.minAreaLbl.Text = "Minimum Alan";
             // 
             // minAreaNum
             // 
-            this.minAreaNum.Location = new System.Drawing.Point(1295, 208);
+            this.minAreaNum.Location = new System.Drawing.Point(1457, 218);
             this.minAreaNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.minAreaNum.Name = "minAreaNum";
-            this.minAreaNum.Size = new System.Drawing.Size(229, 27);
+            this.minAreaNum.Size = new System.Drawing.Size(258, 29);
             this.minAreaNum.TabIndex = 5;
             this.minAreaNum.ValueChanged += new System.EventHandler(this.minAreaNum_ValueChanged);
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(1295, 12);
+            this.saveBtn.Location = new System.Drawing.Point(1457, 13);
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(229, 29);
+            this.saveBtn.Size = new System.Drawing.Size(258, 30);
             this.saveBtn.TabIndex = 1;
             this.saveBtn.Text = "Kaydet";
             this.saveBtn.UseVisualStyleBackColor = true;
@@ -114,9 +115,9 @@
             // 
             // loadSettingsBtn
             // 
-            this.loadSettingsBtn.Location = new System.Drawing.Point(1295, 47);
+            this.loadSettingsBtn.Location = new System.Drawing.Point(1457, 49);
             this.loadSettingsBtn.Name = "loadSettingsBtn";
-            this.loadSettingsBtn.Size = new System.Drawing.Size(229, 29);
+            this.loadSettingsBtn.Size = new System.Drawing.Size(258, 30);
             this.loadSettingsBtn.TabIndex = 2;
             this.loadSettingsBtn.Text = "Ayarları Geri Yükle";
             this.loadSettingsBtn.UseVisualStyleBackColor = true;
@@ -124,9 +125,9 @@
             // 
             // setSourceBtn
             // 
-            this.setSourceBtn.Location = new System.Drawing.Point(1295, 347);
+            this.setSourceBtn.Location = new System.Drawing.Point(1457, 364);
             this.setSourceBtn.Name = "setSourceBtn";
-            this.setSourceBtn.Size = new System.Drawing.Size(229, 29);
+            this.setSourceBtn.Size = new System.Drawing.Size(258, 30);
             this.setSourceBtn.TabIndex = 8;
             this.setSourceBtn.Text = "Kaynak Seç";
             this.setSourceBtn.UseVisualStyleBackColor = true;
@@ -135,97 +136,97 @@
             // maxHeightLbl
             // 
             this.maxHeightLbl.AutoSize = true;
-            this.maxHeightLbl.Location = new System.Drawing.Point(1295, 238);
+            this.maxHeightLbl.Location = new System.Drawing.Point(1457, 250);
             this.maxHeightLbl.Name = "maxHeightLbl";
-            this.maxHeightLbl.Size = new System.Drawing.Size(138, 20);
+            this.maxHeightLbl.Size = new System.Drawing.Size(149, 21);
             this.maxHeightLbl.TabIndex = 0;
             this.maxHeightLbl.Text = "Maximum Yükseklik";
             // 
             // maxHeightNum
             // 
-            this.maxHeightNum.Location = new System.Drawing.Point(1295, 261);
+            this.maxHeightNum.Location = new System.Drawing.Point(1457, 274);
             this.maxHeightNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.maxHeightNum.Name = "maxHeightNum";
-            this.maxHeightNum.Size = new System.Drawing.Size(229, 27);
+            this.maxHeightNum.Size = new System.Drawing.Size(258, 29);
             this.maxHeightNum.TabIndex = 6;
             this.maxHeightNum.ValueChanged += new System.EventHandler(this.maxHeightNum_ValueChanged);
             // 
             // thresholdValueCountBoxLbl
             // 
             this.thresholdValueCountBoxLbl.AutoSize = true;
-            this.thresholdValueCountBoxLbl.Location = new System.Drawing.Point(1295, 132);
+            this.thresholdValueCountBoxLbl.Location = new System.Drawing.Point(1457, 139);
             this.thresholdValueCountBoxLbl.Name = "thresholdValueCountBoxLbl";
-            this.thresholdValueCountBoxLbl.Size = new System.Drawing.Size(171, 20);
+            this.thresholdValueCountBoxLbl.Size = new System.Drawing.Size(182, 21);
             this.thresholdValueCountBoxLbl.TabIndex = 0;
             this.thresholdValueCountBoxLbl.Text = "Sayım Kutusu Eşik Değer";
             // 
             // distanceOfBoxesLbl
             // 
             this.distanceOfBoxesLbl.AutoSize = true;
-            this.distanceOfBoxesLbl.Location = new System.Drawing.Point(1295, 291);
+            this.distanceOfBoxesLbl.Location = new System.Drawing.Point(1457, 306);
             this.distanceOfBoxesLbl.Name = "distanceOfBoxesLbl";
-            this.distanceOfBoxesLbl.Size = new System.Drawing.Size(192, 20);
+            this.distanceOfBoxesLbl.Size = new System.Drawing.Size(204, 21);
             this.distanceOfBoxesLbl.TabIndex = 0;
             this.distanceOfBoxesLbl.Text = "Sayım Kutuları Arası Uzaklık";
             // 
             // distanceOfBoxesNum
             // 
-            this.distanceOfBoxesNum.Location = new System.Drawing.Point(1295, 314);
+            this.distanceOfBoxesNum.Location = new System.Drawing.Point(1457, 330);
             this.distanceOfBoxesNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.distanceOfBoxesNum.Name = "distanceOfBoxesNum";
-            this.distanceOfBoxesNum.Size = new System.Drawing.Size(229, 27);
+            this.distanceOfBoxesNum.Size = new System.Drawing.Size(258, 29);
             this.distanceOfBoxesNum.TabIndex = 7;
             this.distanceOfBoxesNum.ValueChanged += new System.EventHandler(this.distanceOfBoxesNum_ValueChanged);
             // 
             // thresholdValueNum
             // 
-            this.thresholdValueNum.Location = new System.Drawing.Point(1295, 102);
+            this.thresholdValueNum.Location = new System.Drawing.Point(1457, 107);
             this.thresholdValueNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.thresholdValueNum.Name = "thresholdValueNum";
-            this.thresholdValueNum.Size = new System.Drawing.Size(229, 27);
+            this.thresholdValueNum.Size = new System.Drawing.Size(258, 29);
             this.thresholdValueNum.TabIndex = 3;
             this.thresholdValueNum.ValueChanged += new System.EventHandler(this.thresholdValueNum_ValueChanged);
             // 
             // thresholdValueCountBoxNum
             // 
-            this.thresholdValueCountBoxNum.Location = new System.Drawing.Point(1295, 155);
+            this.thresholdValueCountBoxNum.Location = new System.Drawing.Point(1457, 163);
             this.thresholdValueCountBoxNum.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.thresholdValueCountBoxNum.Name = "thresholdValueCountBoxNum";
-            this.thresholdValueCountBoxNum.Size = new System.Drawing.Size(229, 27);
+            this.thresholdValueCountBoxNum.Size = new System.Drawing.Size(258, 29);
             this.thresholdValueCountBoxNum.TabIndex = 4;
             this.thresholdValueCountBoxNum.ValueChanged += new System.EventHandler(this.thresholdValueCountBoxNum_ValueChanged);
             // 
             // bagHeightLblShow
             // 
             this.bagHeightLblShow.AutoSize = true;
-            this.bagHeightLblShow.Location = new System.Drawing.Point(1295, 388);
+            this.bagHeightLblShow.Location = new System.Drawing.Point(1457, 407);
             this.bagHeightLblShow.Name = "bagHeightLblShow";
-            this.bagHeightLblShow.Size = new System.Drawing.Size(82, 20);
+            this.bagHeightLblShow.Size = new System.Drawing.Size(88, 21);
             this.bagHeightLblShow.TabIndex = 9;
             this.bagHeightLblShow.Text = "Çuval Boyu";
             // 
             // bagWidthLblShow
             // 
             this.bagWidthLblShow.AutoSize = true;
-            this.bagWidthLblShow.Location = new System.Drawing.Point(1305, 408);
+            this.bagWidthLblShow.Location = new System.Drawing.Point(1468, 428);
             this.bagWidthLblShow.Name = "bagWidthLblShow";
-            this.bagWidthLblShow.Size = new System.Drawing.Size(69, 20);
+            this.bagWidthLblShow.Size = new System.Drawing.Size(74, 21);
             this.bagWidthLblShow.TabIndex = 9;
             this.bagWidthLblShow.Text = "Çuval Eni";
             // 
@@ -233,7 +234,7 @@
             // 
             this.bagHeightLbl.AutoSize = true;
             this.bagHeightLbl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bagHeightLbl.Location = new System.Drawing.Point(1380, 388);
+            this.bagHeightLbl.Location = new System.Drawing.Point(1552, 407);
             this.bagHeightLbl.Name = "bagHeightLbl";
             this.bagHeightLbl.Size = new System.Drawing.Size(15, 20);
             this.bagHeightLbl.TabIndex = 10;
@@ -243,7 +244,7 @@
             // 
             this.bagWidthLbl.AutoSize = true;
             this.bagWidthLbl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bagWidthLbl.Location = new System.Drawing.Point(1380, 408);
+            this.bagWidthLbl.Location = new System.Drawing.Point(1552, 428);
             this.bagWidthLbl.Name = "bagWidthLbl";
             this.bagWidthLbl.Size = new System.Drawing.Size(15, 20);
             this.bagWidthLbl.TabIndex = 10;
@@ -252,26 +253,26 @@
             // sectionPictureBox
             // 
             this.sectionPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sectionPictureBox.Location = new System.Drawing.Point(435, 12);
+            this.sectionPictureBox.Location = new System.Drawing.Point(489, 13);
             this.sectionPictureBox.Name = "sectionPictureBox";
-            this.sectionPictureBox.Size = new System.Drawing.Size(417, 426);
+            this.sectionPictureBox.Size = new System.Drawing.Size(469, 447);
             this.sectionPictureBox.TabIndex = 11;
             this.sectionPictureBox.TabStop = false;
             // 
             // maskPictureBox
             // 
             this.maskPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskPictureBox.Location = new System.Drawing.Point(858, 12);
+            this.maskPictureBox.Location = new System.Drawing.Point(965, 13);
             this.maskPictureBox.Name = "maskPictureBox";
-            this.maskPictureBox.Size = new System.Drawing.Size(417, 426);
+            this.maskPictureBox.Size = new System.Drawing.Size(469, 447);
             this.maskPictureBox.TabIndex = 12;
             this.maskPictureBox.TabStop = false;
             // 
             // AdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1536, 442);
+            this.ClientSize = new System.Drawing.Size(1728, 473);
             this.Controls.Add(this.maskPictureBox);
             this.Controls.Add(this.sectionPictureBox);
             this.Controls.Add(this.bagWidthLbl);
@@ -292,6 +293,7 @@
             this.Controls.Add(this.thresholdValueCountBoxLbl);
             this.Controls.Add(this.thresholdValueLbl);
             this.Controls.Add(this.pictureBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminForm";
             this.Text = "NSP 2 - Yönetici";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
