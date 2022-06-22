@@ -98,7 +98,7 @@
             // 
             this.fullVersionLbl.AutoSize = true;
             this.fullVersionLbl.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fullVersionLbl.Location = new System.Drawing.Point(435, 413);
+            this.fullVersionLbl.Location = new System.Drawing.Point(437, 413);
             this.fullVersionLbl.Name = "fullVersionLbl";
             this.fullVersionLbl.Size = new System.Drawing.Size(122, 25);
             this.fullVersionLbl.TabIndex = 8;
